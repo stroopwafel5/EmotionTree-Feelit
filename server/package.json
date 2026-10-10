@@ -1,0 +1,15 @@
+{
+  "name": "emotion-tree-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Friends, chat and school groups server for the Emotion Tree app. Plain Node.js, no packages to install.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test \"test/*.test.js\"",
+    "add-school": "node scripts/add-school.js"
+  }
+}

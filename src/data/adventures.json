@@ -1,0 +1,284 @@
+{
+  "_about": "Space buddy adventures: short stories where the child practises what they learned in the feelings leaves. Copy an adventure to make a new one. Step types: talk ('say' + 'next'), choice ('choices'), your words ('ideas' + 'listen' + 'otherwise'), feelings ('feelings': true), and the end ('end': true). A line that starts with a cast id and ':' (like 'robo: Beep!') is said by that character. {name} = the child, {buddy} = the buddy. Run 'npm test' to check. See CONTENT_GUIDE.md section 14 (it has a template).",
+
+  "adventures": [
+    {
+      "id": "sad-robot",
+      "title": "The Sad Little Robot",
+      "icon": "🤖",
+      "about": "A little robot on Planet Bolt looks sad. Can you help?",
+      "practices": [1, 2],
+      "needsLeaves": [2],
+      "cast": {"robo": {"name": "Robo", "icon": "🤖"}},
+      "steps": [
+        {"id": "start", "scene": "🪐🤖", "mood": "surprised",
+         "say": ["{name}, look! We landed on Planet Bolt. 🪐", "There's a little robot sitting all alone.", "robo: Beep… boop… 😔", "Its lights are dim and blue, and it's looking down at the ground."],
+         "next": "feel"},
+        {"id": "feel", "say": ["How do you think the robot feels?"],
+         "choices": [
+           {"text": "Sad 😢", "good": true, "reply": "Yes! Looking down and dim blue lights can mean sad. Great noticing! 🔍", "next": "notice"},
+           {"text": "Happy 😊", "reply": "Hmm, happy robots usually bounce, and their lights shine bright. This robot is looking down. Look again! 👀"},
+           {"text": "Angry 😠", "reply": "Good guess! But angry robots might stomp and flash red. This one is quiet and looking down. Try again! 👀"}
+         ]},
+        {"id": "notice", "say": ["What can we do when someone looks sad?"],
+         "choices": [
+           {"text": "Ask if they're OK 💬", "good": true, "reply": "Yes! Asking is a kind way to start. 💜", "next": "talk"},
+           {"text": "Laugh at the robot 😆", "reply": "Hmm, laughing might make the robot feel worse. 💜 What else could we do?"},
+           {"text": "Walk away 🚶", "reply": "We could… but the robot might feel even more alone. 💜 Let's try something else."}
+         ]},
+        {"id": "talk", "say": ["What could you say to the robot?"],
+         "ideas": ["Are you OK?", "Hi! Do you want to play?", "Go away, robot."],
+         "listen": [
+           {"patterns": ["are you ok*", "are you alright", "whats wrong", "what is wrong", "what happened", "can i help", "help you"], "good": true, "reply": "Perfect! That shows you care. 💜"},
+           {"patterns": ["go away", "stupid", "weird", "dumb", "ugly", "shut up", "boring"], "again": true, "reply": "Hmm, that might make the robot even sadder. 💜 What's a kind thing to say?"},
+           {"patterns": ["play*", "friend*", "hi", "hello"], "good": true, "reply": "So friendly! 😊 A friendly hello helps a lot."}
+         ],
+         "otherwise": "That's your own idea! 🌟 You were brave to talk to someone new.",
+         "next": "lost"},
+        {"id": "lost", "mood": "sad",
+         "say": ["robo: Beep! You… you talked to me! 🤖", "robo: I lost my favourite bolt. It's shiny and gold. I can't find it anywhere. 😢", "Oh no! That's why Robo is sad."],
+         "next": "help"},
+        {"id": "help", "say": ["How can we help Robo?"],
+         "choices": [
+           {"text": "Help look for the bolt 🔍", "good": true, "reply": "Great idea! Helping is a super kind thing to do. 💪", "next": "search"},
+           {"text": "Say “It's just a bolt.” 🤷", "reply": "Hmm, the bolt is special to Robo. 💜 Things we love matter, even small things. What else could we do?"},
+           {"text": "Tell Robo to stop crying 🙅", "reply": "Crying is OK. It helps feelings come out. 💜 Let's try another way."}
+         ]},
+        {"id": "search", "say": ["Where should we look? 🔍"],
+         "choices": [
+           {"text": "Under the moon rock 🪨", "good": true, "reply": "Let's look… not here! But wait… something shiny! ✨", "next": "found"},
+           {"text": "In the crater 🕳️", "good": true, "reply": "Let's look… there it is! ✨", "next": "found"}
+         ]},
+        {"id": "found", "scene": "✨🔩✨", "mood": "grin",
+         "say": ["You found the golden bolt! 🔩", "robo: BEEP BEEP! My bolt! Thank you, thank you! 🤖💛", "Look! Robo's lights turned bright yellow, and Robo is spinning around!"],
+         "next": "now"},
+        {"id": "now", "say": ["How does Robo feel now?"],
+         "choices": [
+           {"text": "Happy 😊", "good": true, "reply": "Yes! Bright lights and spinning mean happy! 🎉", "next": "you"},
+           {"text": "Sad 😢", "reply": "Hmm, look at Robo: bright lights, spinning around… Is that sad? Look again! 👀"},
+           {"text": "Scared 😨", "reply": "Scared robots might hide. Robo is spinning and shining! Try again! 👀"}
+         ]},
+        {"id": "you", "say": ["How do YOU feel when you help a friend?"],
+         "feelings": true,
+         "feelingReplies": {"happy": "Me too! Helping makes my antennas glow! 😊", "excited": "Yes! Helping is exciting! 🤩", "calm": "Helping can feel warm and calm. 😌", "*": "All feelings are OK! 💜 Thank you for telling me."},
+         "next": "end"},
+        {"id": "end", "mood": "love",
+         "say": ["robo: You're my new friend, {name}! Beep boop! 🤖💜", "You noticed Robo was sad, asked if Robo was OK, and helped. That's what a great friend does! 🌟"],
+         "end": true}
+      ]
+    },
+
+    {
+      "id": "meteor",
+      "title": "Meteor Mess",
+      "icon": "☄️",
+      "about": "My tower fell down and I'm SO angry! Help me calm down.",
+      "practices": [3, 5],
+      "needsLeaves": [3],
+      "cast": {"luna": {"name": "Luna", "icon": "🐱"}},
+      "steps": [
+        {"id": "start", "scene": "🧱🏰", "mood": "grin",
+         "say": ["Look, {name}! I built a giant moon-block tower! 🏰", "It took me ALL morning. It's my best tower ever!"],
+         "next": "crash"},
+        {"id": "crash", "scene": "🐱💥🧱", "mood": "grumpy",
+         "say": ["luna: Meow! *zoom zoom* 🐱💨", "CRASH! 💥 Luna the space cat ran into my tower, and it fell down!", "Grrr! My tower! 😠"],
+         "next": "feel"},
+        {"id": "feel", "mood": "grumpy", "say": ["How do you think I feel right now?"],
+         "choices": [
+           {"text": "Angry 😠", "good": true, "reply": "Yes. I feel ANGRY! My face is hot and my hands are tight. 😠", "next": "body"},
+           {"text": "Happy 😊", "reply": "Hmm, look at my face: my eyebrows are down and my mouth is tight. Is that happy? 👀"},
+           {"text": "Sleepy 😴", "reply": "Not sleepy! My eyes are wide open and I want to stomp! Look again. 👀"}
+         ]},
+        {"id": "body", "mood": "grumpy",
+         "say": ["When I'm angry, my body feels hot, like a volcano. 🌋", "What could I do to calm down?"],
+         "choices": [
+           {"text": "Take slow breaths 🌬️", "good": true, "reply": "Great idea! Let's do it together.", "next": "breatheIn"},
+           {"text": "Kick the blocks 🦶", "reply": "Hmm, kicking could hurt me or break things. 💜 Angry is OK, but hurting is not. What else?"},
+           {"text": "Yell at Luna 📢", "reply": "Yelling might scare Luna. 💜 Let's find a calmer way first."},
+           {"text": "Count to 10 🔢", "good": true, "reply": "Yes! Counting helps my brain slow down. And breathing too!", "next": "breatheIn"}
+         ]},
+        {"id": "breatheIn", "scene": "🌬️",
+         "say": ["Let's breathe together. Breathe IN slowly through your nose… 1… 2… 3… 🌬️"],
+         "nextLabel": "I breathed in 🌬️",
+         "next": "breatheOut"},
+        {"id": "breatheOut", "scene": "💨",
+         "say": ["Now breathe OUT through your mouth, like blowing out a candle… 1… 2… 3… 💨"],
+         "nextLabel": "I breathed out 💨",
+         "next": "calmer"},
+        {"id": "calmer", "mood": "happy",
+         "say": ["Phew. I feel calmer now. 😌 My face isn't hot anymore.", "Luna is hiding behind a rock. She looks worried. 🐱"],
+         "next": "words"},
+        {"id": "words", "say": ["What could I say to Luna?"],
+         "ideas": ["I feel angry because my tower fell.", "You're a bad cat!", "Please be careful next time."],
+         "listen": [
+           {"patterns": ["bad cat", "stupid", "hate", "go away", "dumb", "bad"], "again": true, "reply": "Hmm, that might hurt Luna's feelings. 💜 She didn't mean to. What else could I say?"},
+           {"patterns": ["angry because", "i feel angry", "i was angry", "i felt angry", "i feel sad", "because my tower", "tower fell"], "good": true, "reply": "Yes! Saying how I feel, with words, is SO much better than yelling. 🌟"},
+           {"patterns": ["careful", "please", "next time"], "good": true, "reply": "Good one! That tells Luna what I need, in a kind way. 💜"}
+         ],
+         "otherwise": "That's a calm way to say it! 🌟",
+         "next": "sorry"},
+        {"id": "sorry", "say": ["luna: Meow… I'm sorry I knocked down your tower. I was zooming too fast. 😿"], "next": "answer"},
+        {"id": "answer", "say": ["Luna said sorry! What could I say back?"],
+         "choices": [
+           {"text": "That's OK. Let's build it together! 🧱", "good": true, "reply": "Yes! Building is more fun together! 🎉", "next": "build"},
+           {"text": "No! Go away! 😠", "reply": "Hmm, Luna said sorry and feels bad. 💜 Could we forgive her?"},
+           {"text": "(Say nothing.)", "reply": "That's OK too, if you need a minute. 💜 But Luna might like to hear something kind. Try again?"}
+         ]},
+        {"id": "build", "scene": "🏰✨", "mood": "grin",
+         "say": ["We built an even BIGGER tower together! 🏰", "luna: Purrr! Teamwork! 🐱💜"],
+         "next": "you"},
+        {"id": "you", "say": ["What helps YOU calm down when you're angry?"],
+         "ideas": ["Taking deep breaths", "Counting to 10", "Hugging a pillow", "Going somewhere quiet"],
+         "listen": [
+           {"patterns": ["breath*", "breathe*", "count*", "hug*", "pillow", "quiet", "music", "draw*", "squeez*", "walk*", "drink*", "water", "blanket", "rest*", "jump*", "run*"], "good": true, "reply": "That's a great idea! Remember it for next time. 🌟"}
+         ],
+         "otherwise": "That's a great idea! Everyone has their own way to calm down. 🌟",
+         "next": "end"},
+        {"id": "end", "mood": "love",
+         "say": ["You helped me calm down, use my words, and forgive Luna. 🌋➡️😌", "Angry feelings are OK. What we DO with them matters. You're a calm-down champion, {name}! 🏆"],
+         "end": true}
+      ]
+    },
+
+    {
+      "id": "rocket-show",
+      "title": "The Rocket Show",
+      "icon": "🎆",
+      "about": "A dark tunnel, then a LOUD rocket show. Let's stay calm together!",
+      "practices": [7, 8],
+      "needsLeaves": [8],
+      "cast": {"pip": {"name": "Pip", "icon": "👾"}},
+      "steps": [
+        {"id": "start", "scene": "🎆🚀", "mood": "grin",
+         "say": ["Tonight is the big Rocket Show, {name}! 🎆", "But first we have to walk through the Moon Tunnel. 🌙"],
+         "next": "tunnel"},
+        {"id": "tunnel", "scene": "🌑🕳️", "mood": "surprised",
+         "say": ["It's very dark in here…", "pip: Um… I don't want to go in there. 😨 It's so dark…", "That's Pip, a little alien. Pip is shaking."],
+         "next": "feel"},
+        {"id": "feel", "say": ["How do you think Pip feels?"],
+         "choices": [
+           {"text": "Scared 😨", "good": true, "reply": "Yes. Shaking and not wanting to go in can mean scared. 😨", "next": "helpPip"},
+           {"text": "Bored 🥱", "reply": "Hmm, Pip is shaking and doesn't want to go in. Is that bored? Look again. 👀"},
+           {"text": "Silly 🤪", "reply": "Pip isn't laughing or making silly faces. Pip is shaking. Try again! 👀"}
+         ]},
+        {"id": "helpPip", "say": ["What could help Pip?"],
+         "choices": [
+           {"text": "Hold hands and use a flashlight 🔦", "good": true, "reply": "Great idea! Light and a friend make dark places less scary. 🤝", "next": "tunnel2"},
+           {"text": "Say “Don't be a baby!” 🙅", "reply": "Hmm, that might make Pip feel worse. 💜 Everyone gets scared sometimes. What else could help?"},
+           {"text": "Run ahead and leave Pip 🏃", "reply": "Pip might feel even more scared alone. 💜 Let's stay together."}
+         ]},
+        {"id": "tunnel2", "scene": "🔦✨", "mood": "happy",
+         "say": ["Click! 🔦 We hold hands and walk together.", "pip: It's not so scary with you! Thank you! 👾💜"],
+         "next": "show"},
+        {"id": "show", "scene": "🎆💥🎆", "mood": "surprised",
+         "say": ["We made it to the Rocket Show! 🎆", "BOOM! 💥 BANG! 💥 The rockets are SO loud, the lights are flashing, and there are SO many people! 📢"],
+         "next": "tooMuch"},
+        {"id": "tooMuch", "mood": "surprised",
+         "say": ["Oh no… I'm covering my ears. Everything is too much for me. 🙉", "What is happening to me?"],
+         "choices": [
+           {"text": "It's too much: too loud and too bright 🙉", "good": true, "reply": "Yes. When there's too much noise and light, my brain gets overloaded. That's called overstimulation. 🙉", "next": "whatHelps"},
+           {"text": "You're happy 😊", "reply": "Hmm, I'm covering my ears and squeezing my eyes. Is that happy? Look again. 👀"},
+           {"text": "You're sleepy 😴", "reply": "I'm not sleepy… I'm covering my ears because it's so loud! Try again! 👀"}
+         ]},
+        {"id": "whatHelps", "say": ["What can help me?"],
+         "choices": [
+           {"text": "Put on headphones 🎧", "good": true, "reply": "Ahh, that's better! Headphones make the noise smaller. 🎧", "next": "tell"},
+           {"text": "Go to a quiet spot 🤫", "good": true, "reply": "Good idea! A quiet spot gives my brain a rest. 🤫", "next": "tell"},
+           {"text": "Stay and scream louder 📢", "reply": "Hmm, more noise would make it worse. 💜 What could make it quieter?"}
+         ]},
+        {"id": "tell", "say": ["I should tell a grown-up how I feel. What could I say?"],
+         "ideas": ["It's too loud. I need a break.", "Can we go somewhere quiet?", "I'm fine."],
+         "listen": [
+           {"patterns": ["too loud", "too much", "need a break", "break", "quiet", "headphones", "noisy"], "good": true, "reply": "Perfect! Saying what you need helps grown-ups help you. 🌟"},
+           {"patterns": ["fine", "=okay", "=nothing"], "again": true, "reply": "Hmm, but I'm NOT fine right now. 💜 It's OK to say what's wrong. What could I say?"}
+         ],
+         "otherwise": "That's a good way to ask for help! 🌟",
+         "next": "quiet"},
+        {"id": "quiet", "scene": "⛺🌙", "mood": "happy",
+         "say": ["We went to the quiet tent. It's calm and cozy here. ⛺", "From here, the rockets look pretty, and they're not too loud. 🎆😌", "pip: I like the quiet tent too! 👾"],
+         "next": "you"},
+        {"id": "you", "say": ["How do YOU feel in quiet places?"],
+         "feelings": true,
+         "feelingReplies": {"calm": "Me too! Quiet places are cozy. 😌", "happy": "Yay! Quiet can feel happy. 😊", "tired": "Quiet places are great for resting. 😴", "*": "All feelings are OK! 💜"},
+         "next": "end"},
+        {"id": "end", "mood": "love",
+         "say": ["You helped Pip when Pip was scared, and you helped me when everything was too much. 🌟", "It's OK to need a break. Taking care of yourself is SMART, {name}! 🧠💜"],
+         "end": true}
+      ]
+    },
+
+    {
+      "id": "new-kid",
+      "title": "New Kid on the Space Station",
+      "icon": "🛰️",
+      "about": "Your first day at Space School! New places, new kids, a new friend.",
+      "practices": [9, 10, 11],
+      "needsLeaves": [9],
+      "cast": {"kai": {"name": "Captain Kai", "icon": "🧑‍🚀"}, "ava": {"name": "Ava", "icon": "👧"}},
+      "steps": [
+        {"id": "start", "scene": "🛰️🏫", "mood": "grin",
+         "say": ["Today is your FIRST day at Space School, {name}! 🛰️", "Everything is new: new rooms, new kids, new rules."],
+         "next": "feel"},
+        {"id": "feel", "say": ["How do you feel on a first day?"],
+         "feelings": true,
+         "feelingReplies": {"scared": "Lots of kids feel scared on a first day. That's OK! 💜", "excited": "Woohoo! New things can be exciting! 🤩", "overwhelmed": "New places can be too much. It's OK to take a break. 💜", "*": "All feelings are OK on a first day! 💜"},
+         "next": "tip"},
+        {"id": "tip",
+         "say": ["Here's a tip for new places: find a grown-up who can help.", "kai: Hello! I'm Captain Kai, your teacher. 🧑‍🚀 Welcome!"],
+         "next": "ask"},
+        {"id": "ask", "say": ["What could you ask Captain Kai?"],
+         "ideas": ["Where is the bathroom?", "What will we do today?", "Where do I sit?"],
+         "listen": [
+           {"patterns": ["bathroom", "toilet", "where", "what will", "what do we", "today", "sit", "help"], "good": true, "reply": "Great question! Asking questions makes new places less scary. 🌟"}
+         ],
+         "otherwise": "Good question! Grown-ups are happy to help. 😊",
+         "next": "answer"},
+        {"id": "answer", "say": ["kai: Great question! I'll show you around. At break time, you can play with the other kids. 😊"], "next": "play"},
+        {"id": "play", "scene": "⚽🌟👧",
+         "say": ["It's break time! Some kids are playing star-ball. ⚽🌟", "A girl named Ava looks at you, smiles, and waves. 👋"],
+         "next": "body"},
+        {"id": "body", "say": ["What does Ava's body say?"],
+         "choices": [
+           {"text": "Come and play! 😊", "good": true, "reply": "Yes! A smile and a wave usually mean “Hi! You're welcome here!” 👋", "next": "join"},
+           {"text": "Go away! 😠", "reply": "Hmm, Ava is smiling and waving. People who want you to go away don't usually smile and wave. Look again! 👀"},
+           {"text": "I'm sad 😢", "reply": "Ava's smiling! Smiles usually mean happy or friendly. Try again! 👀"}
+         ]},
+        {"id": "join", "say": ["What could you say to join the game?"],
+         "ideas": ["Hi! Can I play too?", "That looks fun!", "(Just grab the ball.)"],
+         "listen": [
+           {"patterns": ["grab", "take the ball", "just take"], "again": true, "reply": "Hmm, grabbing the ball might upset the others. 💜 What could you SAY first?"},
+           {"patterns": ["can i play", "play too", "can i join", "join", "looks fun", "hi", "hello", "my name"], "good": true, "reply": "Perfect! That's a great way to join. 🌟"}
+         ],
+         "otherwise": "Nice! Being friendly is a great start. 😊",
+         "next": "ava"},
+        {"id": "ava", "say": ["ava: Sure! I'm Ava. What do you like?"], "next": "interest"},
+        {"id": "interest", "say": ["Tell Ava something you love!"],
+         "ideas": ["I love dinosaurs!", "I love trains!", "I love drawing!"],
+         "listen": [
+           {"patterns": ["i love", "i like", "favourite", "dino*", "train*", "draw*", "space", "car*", "animal*", "lego*", "music"], "good": true, "reply": "Ooh, cool! Sharing what you love helps people get to know you. 🌟"}
+         ],
+         "otherwise": "Cool! That's interesting! 🌟",
+         "next": "long"},
+        {"id": "long",
+         "say": ["You tell Ava LOTS of facts about the thing you love. 🤓", "After a while, Ava looks at the ball, then at the other kids, and says “Mm-hm…”"],
+         "next": "notice"},
+        {"id": "notice", "say": ["What might Ava's body be saying now?"],
+         "choices": [
+           {"text": "Maybe she wants to play now ⚽", "good": true, "reply": "Good noticing! Looking away and “Mm-hm” can mean someone wants to do something else. 👀", "next": "turn"},
+           {"text": "She wants 100 more facts 🤓", "reply": "Hmm, Ava is looking at the ball and the other kids. What could that mean? Look again. 👀"},
+           {"text": "She's angry 😠", "reply": "Ava isn't frowning or stomping. She's just looking at the game. Try again! 👀"}
+         ]},
+        {"id": "turn", "say": ["You can ask Ava about HER! What could you ask?"],
+         "ideas": ["What do you like, Ava?", "Do you want to play star-ball now?"],
+         "listen": [
+           {"patterns": ["what do you like", "you like", "your favourite", "what about you", "and you", "play", "ball", "game"], "good": true, "reply": "Yes! Asking about the other person is what good friends do. 💜"}
+         ],
+         "otherwise": "Nice! Taking turns talking makes friends happy. 💜",
+         "next": "end"},
+        {"id": "end", "scene": "⚽🦖🤝", "mood": "love",
+         "say": ["ava: I like star-ball AND dinosaurs! Let's play together! ⚽🦖", "You did it, {name}! You asked for help, read Ava's body language, joined a game, shared what you love, AND took turns talking. 🌟", "That's how new friendships start! 🤝"],
+         "end": true}
+      ]
+    }
+  ]
+}

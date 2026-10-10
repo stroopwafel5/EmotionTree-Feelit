@@ -1,0 +1,23 @@
+{
+  "_about": "The planets and the levels (leaves), in the order the child plays them. See CONTENT_GUIDE.md. A level's id links it to its lesson in explanations.json (same id) and its questions in questions.json (levelId). icon = the emoji on the leaf. section = the planet id.",
+  "sections": [
+    {"id": 1, "title": "Planet 1: Basic Feelings", "icon": "🪐"},
+    {"id": 2, "title": "Planet 2: Big Feelings", "icon": "🌋"},
+    {"id": 3, "title": "Planet 3: Special Missions", "icon": "🚀"}
+  ],
+  "levels": [
+    {"id": 1, "name": "Happiness", "icon": "😊", "section": 1},
+    {"id": 2, "name": "Sadness", "icon": "😢", "section": 1},
+    {"id": 3, "name": "Anger", "icon": "😠", "section": 1},
+    {"id": 4, "name": "Tiredness", "icon": "😴", "section": 1},
+    {"id": 5, "name": "Annoyedness", "icon": "😒", "section": 1},
+    {"id": 6, "name": "Jealousy", "icon": "😣", "section": 2},
+    {"id": 7, "name": "Fear", "icon": "😨", "section": 2},
+    {"id": 8, "name": "Overstimulation", "icon": "🙉", "section": 2},
+    {"id": 9, "name": "Unfamiliar Places", "icon": "🗺️", "section": 3},
+    {"id": 10, "name": "Special Interests", "icon": "🦕", "section": 3},
+    {"id": 11, "name": "Body Language", "icon": "🙌", "section": 3},
+    {"id": 12, "name": "Sarcasm", "icon": "😏", "section": 3},
+    {"id": 13, "name": "Bullies & Ableism", "icon": "🛡️", "section": 3}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "_about": "The feelings a child can pick to show how they feel right now (on their avatar, and as feeling cards in chats). 'face' tells the avatar drawing which face to make: happy, excited, calm, tired, sad, scared, angry, annoyed, jealous, overwhelmed. See CONTENT_GUIDE.md.",
+  "feelings": [
+    {"id": "happy", "name": "Happy", "emoji": "😊", "face": "happy"},
+    {"id": "excited", "name": "Excited", "emoji": "🤩", "face": "excited"},
+    {"id": "calm", "name": "Calm", "emoji": "😌", "face": "calm"},
+    {"id": "tired", "name": "Tired", "emoji": "😴", "face": "tired"},
+    {"id": "sad", "name": "Sad", "emoji": "😢", "face": "sad"},
+    {"id": "scared", "name": "Scared", "emoji": "😨", "face": "scared"},
+    {"id": "angry", "name": "Angry", "emoji": "😠", "face": "angry"},
+    {"id": "annoyed", "name": "Annoyed", "emoji": "😒", "face": "annoyed"},
+    {"id": "jealous", "name": "Jealous", "emoji": "😣", "face": "jealous"},
+    {"id": "overwhelmed", "name": "Too much", "emoji": "🙉", "face": "overwhelmed"}
+  ]
+}

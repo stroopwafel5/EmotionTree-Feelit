@@ -1,0 +1,358 @@
+{
+  "_about": "One lesson per level (Part 1 of every leaf). See CONTENT_GUIDE.md. id = the level id. photos = photo ids from photos.json. explanation and howToHelp = lists of short lines (each line is shown on its own). howToHelpTitle = optional heading for the howToHelp part. examples = short stories (name, emoji icon, text). askYou = the question in the speech balloon.",
+  "explanations": [
+    {
+      "id": 1,
+      "photos": ["happy-1", "happy-2", "happy-3"],
+      "explanation": [
+        "Happy is a good feeling.",
+        "We feel happy when something nice happens.",
+        "How can you tell?",
+        "Look at the face! A happy person smiles.",
+        "Their eyes look bright.",
+        "They may laugh, jump or play."
+      ],
+      "howToHelp": [
+        "Smile back at them.",
+        "Play with them and share the fun.",
+        "You can say: “I am happy too!”"
+      ],
+      "examples": [
+        {"name": "Dina", "icon": "👧", "text": "Dina really likes playing ball ⚽. Playing makes her happy!"},
+        {"name": "Jim", "icon": "👦", "text": "Jim likes eating cookies 🍪. Snacks make him happy."},
+        {"name": "Zib the alien", "icon": "👽", "text": "Zib loves looking at the stars ✨. The stars make Zib happy!"}
+      ],
+      "askYou": "What makes YOU happy?"
+    },
+    {
+      "id": 2,
+      "photos": ["sad-1", "sad-2", "sad-3"],
+      "explanation": [
+        "Sad is a heavy feeling.",
+        "We feel sad when we lose something, or when we miss someone.",
+        "How can you tell?",
+        "A sad person may cry.",
+        "The corners of their mouth go down.",
+        "They may look at the floor, or sit alone.",
+        "They may be very quiet."
+      ],
+      "howToHelp": [
+        "Sit with them.",
+        "Use a soft voice. Ask: “Are you OK?”",
+        "You can give a hug, but ask first.",
+        "If they keep crying, tell a grown-up."
+      ],
+      "examples": [
+        {"name": "Leo", "icon": "👦", "text": "Leo's balloon flew away 🎈. He felt sad and cried a little."},
+        {"name": "Noa", "icon": "👧", "text": "Noa's best friend moved to a new town 🏠. Noa misses her. She feels sad."},
+        {"name": "Robo the robot", "icon": "🤖", "text": "Robo's tower fell down 🧱. Robo felt sad. Then a friend helped him build it again!"}
+      ],
+      "askYou": "What makes YOU sad? What helps you feel better?"
+    },
+    {
+      "id": 3,
+      "photos": ["angry-1", "angry-2", "angry-3"],
+      "explanation": [
+        "Angry is a big, hot feeling.",
+        "We feel angry when something is not fair, or when someone hurts us.",
+        "How can you tell?",
+        "An angry person frowns. Their eyebrows go down.",
+        "Their face may go red.",
+        "They may shout, stomp, or make fists."
+      ],
+      "howToHelp": [
+        "Stay calm. Do not shout back.",
+        "Give them some space.",
+        "You can say: “Let's take deep breaths together.”",
+        "If someone could get hurt, get a grown-up."
+      ],
+      "examples": [
+        {"name": "Ben", "icon": "👦", "text": "Someone broke Ben's Lego tower on purpose 🧱. Ben felt angry. His face got hot."},
+        {"name": "Ava", "icon": "👧", "text": "Ava had to stop her game 🎮. She felt angry and stomped her feet."},
+        {"name": "Luna the space cat", "icon": "🐱", "text": "Someone stepped on Luna's tail 🐾. She felt angry. She took deep breaths to calm down."}
+      ],
+      "askYou": "What makes YOU angry? What helps you calm down?"
+    },
+    {
+      "id": 4,
+      "photos": ["tired-1", "tired-2", "tired-3"],
+      "explanation": [
+        "Tired means our body needs rest.",
+        "We feel tired after a long day, or when we did not sleep enough.",
+        "How can you tell?",
+        "A tired person yawns.",
+        "Their eyes close, or they rub their eyes.",
+        "They may rest their head on the table.",
+        "They move slowly."
+      ],
+      "howToHelp": [
+        "Let them rest in a quiet place.",
+        "Make the lights soft.",
+        "Give them some water or a snack.",
+        "Do not ask them to play loud games now."
+      ],
+      "examples": [
+        {"name": "Lily", "icon": "👧", "text": "Lily swam all day at the beach 🏊. In the evening she was very tired."},
+        {"name": "Omar", "icon": "👦", "text": "Omar went to bed late 🌙. The next day his eyes felt heavy at school."},
+        {"name": "Captain Kai", "icon": "🧑‍🚀", "text": "Captain Kai flew the rocket for a long time 🚀. Then Kai needed a nap!"}
+      ],
+      "askYou": "When do YOU feel tired? What helps you rest?"
+    },
+    {
+      "id": 5,
+      "photos": ["annoyed-1", "annoyed-2", "annoyed-3"],
+      "explanation": [
+        "Annoyed is a small angry feeling.",
+        "We feel annoyed when something bothers us again and again, like a loud noise.",
+        "How can you tell?",
+        "An annoyed person may cross their arms.",
+        "They may pout, or roll their eyes.",
+        "They may sigh, or say: “Stop it!”"
+      ],
+      "howToHelp": [
+        "Stop the thing that bothers them.",
+        "Make it quiet.",
+        "Give them some space.",
+        "Ask: “What is bothering you?”"
+      ],
+      "examples": [
+        {"name": "Max", "icon": "👦", "text": "Max's little brother poked him again and again 👉. Max felt annoyed."},
+        {"name": "Dina", "icon": "👧", "text": "A mosquito kept buzzing around Dina's head 🦟. She felt annoyed."},
+        {"name": "Zib the alien", "icon": "👽", "text": "Zib's radio kept beeping 📻. Beep, beep, beep! Zib felt annoyed."}
+      ],
+      "askYou": "What annoys YOU?"
+    },
+    {
+      "id": 6,
+      "photos": ["jealous-1", "jealous-2", "jealous-3"],
+      "explanation": [
+        "Jealous is a mixed-up feeling.",
+        "We feel jealous when someone has something we want.",
+        "It can feel like sad and angry at the same time.",
+        "How can you tell?",
+        "You can't always see jealousy on a face.",
+        "Look at what is happening: does someone have something the person wants?",
+        "A jealous person may frown, sulk, or say: “It's not fair!”"
+      ],
+      "howToHelpTitle": "What can help? 🤝",
+      "howToHelp": [
+        "Say it: “I feel jealous.” It's OK to have this feeling.",
+        "Ask for a turn: “Can I play next?”",
+        "Think of something nice that YOU have.",
+        "Be happy for your friend. Your turn will come.",
+        "If a friend is jealous: share, or take turns."
+      ],
+      "examples": [
+        {"name": "Sam", "icon": "👦", "text": "Sam's friend got a new bike 🚲. Sam wanted one too. He felt jealous."},
+        {"name": "Mia", "icon": "👧", "text": "Mia's baby brother got lots of hugs 👶. Mia felt jealous. Then Mom hugged her too!"},
+        {"name": "Zib the alien", "icon": "👽", "text": "Zib's friend had a shiny star ⭐. Zib felt jealous. So Zib asked: “Can I hold it, please?”"}
+      ],
+      "askYou": "Have YOU ever felt jealous? What happened?"
+    },
+    {
+      "id": 7,
+      "photos": ["fear-1", "fear-2", "fear-3"],
+      "explanation": [
+        "Scared (afraid) is a feeling that tells us: “Be careful!”",
+        "Fear helps to keep us safe.",
+        "Everyone feels scared sometimes, even grown-ups.",
+        "How can you tell?",
+        "A scared person's eyes open wide.",
+        "Their heart beats fast. Their hands may shake.",
+        "They may hide, freeze, cry, or want to run away."
+      ],
+      "howToHelpTitle": "How to handle fear 🛟",
+      "howToHelp": [
+        "Tell a grown-up you trust: “I feel scared.”",
+        "Breathe slowly: smell a flower 🌸 (in through your nose), blow out a candle 🕯️ (out through your mouth).",
+        "Hold something soft, like a teddy.",
+        "Look around and name 5 things you can see.",
+        "Say to yourself: “I am safe. This feeling will pass.”",
+        "If a friend is scared: stay close and use a calm voice."
+      ],
+      "examples": [
+        {"name": "Leo", "icon": "👦", "text": "Leo is scared of the dark 🌙. A night light helps him feel safe."},
+        {"name": "Noa", "icon": "👧", "text": "Noa was scared of the loud thunder ⛈️. She held Dad's hand and counted slowly to 10."},
+        {"name": "Robo the robot", "icon": "🤖", "text": "Robo was scared before his first space walk 🛰️. Captain Kai told him the plan, step by step. Then Robo felt brave!"}
+      ],
+      "askYou": "What makes YOU scared? What helps you feel safe?"
+    },
+    {
+      "id": 8,
+      "photos": ["over-1", "over-2", "over-3"],
+      "explanation": [
+        "Overstimulation means: TOO MUCH for my brain.",
+        "Too loud. Too bright. Too many people. Too many smells.",
+        "The brain gets full, like a cup that spills over.",
+        "This can happen to anyone. It happens a lot to autistic people. That's OK!",
+        "How can you tell?",
+        "You may cover your ears or close your eyes.",
+        "You may feel hot, shaky, or want to run away.",
+        "It is hard to think, talk, or listen.",
+        "Some people cry, shout, or need to move a lot."
+      ],
+      "howToHelpTitle": "How to handle it 🛟",
+      "howToHelp": [
+        "Go to a quiet place and take a break.",
+        "Wear headphones or ear defenders 🎧.",
+        "Sunglasses or a hat can help with bright lights 🕶️.",
+        "Hold a fidget toy or something soft.",
+        "Tell a grown-up: “It's too much!” or show your break card.",
+        "Breathe slowly and count to 10.",
+        "If a friend is overstimulated: talk less, make it quiet, and don't touch them unless they say yes."
+      ],
+      "examples": [
+        {"name": "Jim", "icon": "👦", "text": "The party was very loud 🎉. Jim put on his headphones 🎧 and sat in a quiet room. Then he felt better."},
+        {"name": "Lily", "icon": "👧", "text": "The shop had bright lights and lots of people 🛒. It was too much for Lily. She told Mom: “I need a break.”"},
+        {"name": "Zib the alien", "icon": "👽", "text": "The rocket launch was SO loud 🚀. Zib covered his ears and went to his quiet room on the spaceship."}
+      ],
+      "askYou": "What is too much for YOU? Too loud? Too bright? What helps you?"
+    },
+    {
+      "id": 9,
+      "photos": ["place-1", "place-2", "place-3"],
+      "explanation": [
+        "An unfamiliar place is a place we have never been to before.",
+        "Like a new school, an airport, a hotel, or a new doctor.",
+        "New places can feel strange or scary. That's OK!",
+        "We don't know what will happen, and there may be new sounds, lights and smells.",
+        "The good news: we can get ready!"
+      ],
+      "howToHelpTitle": "How to get ready 🧳",
+      "howToHelp": [
+        "BEFORE: Look at photos or videos of the new place.",
+        "Make a plan: What happens first? Next? Last?",
+        "Pack your comfort things: headphones 🎧, a toy, a snack 🍎.",
+        "AT THE PLACE: Stay close to your grown-up.",
+        "Find a quiet spot for breaks.",
+        "Agree on a sign that means: “I need a break.”",
+        "AFTER: Rest. You did something brave! ⭐"
+      ],
+      "examples": [
+        {"name": "Dina", "icon": "👧", "text": "Dina went on a plane for the first time ✈️. She looked at photos of the airport before. On the day, she knew what to expect!"},
+        {"name": "Omar", "icon": "👦", "text": "Omar went to a new dentist 🦷. Mom showed him the plan: wait, sit in the chair, open wide, go home. It helped!"},
+        {"name": "Captain Kai", "icon": "🧑‍🚀", "text": "Captain Kai lands on new planets all the time 🪐. Kai always brings a map and a favorite snack."}
+      ],
+      "askYou": "Where would YOU like to go? What would you take with you?"
+    },
+    {
+      "id": 10,
+      "photos": ["interest-1", "interest-2", "interest-3"],
+      "explanation": [
+        "A special interest is something you LOVE and know a LOT about.",
+        "Like dinosaurs 🦕, trains 🚂, space 🚀, animals, maps, or a game.",
+        "Many autistic people have special interests. They are a great thing!",
+        "Talking about them makes us happy.",
+        "But other people may like different things.",
+        "How can you tell when it is a bit too much for them?",
+        "They look away, or look at their phone.",
+        "They say “Mm-hm” or “OK” again and again.",
+        "They try to change the topic, or start to walk away."
+      ],
+      "howToHelpTitle": "How to share your interest 💬",
+      "howToHelp": [
+        "Talk for a little bit. Then stop and ask: “Do you want to hear more?”",
+        "Take turns: ask what THEY like, and listen 👂.",
+        "Watch their face: are they smiling and asking questions? Then they are interested!",
+        "If they look away or change the topic, that's OK. Save the rest for later.",
+        "Find friends who love the same thing. You can talk for a long time with them!"
+      ],
+      "examples": [
+        {"name": "Leo", "icon": "👦", "text": "Leo knows the names of 100 dinosaurs 🦕! He tells his friend about T. rex, then asks: “What's your favorite animal?”"},
+        {"name": "Ava", "icon": "👧", "text": "Ava loves trains 🚂. She talked about trains for a long time. Her friend looked at the door. Ava said: “Let's talk about you now!”"},
+        {"name": "Robo the robot", "icon": "🤖", "text": "Robo LOVES planets 🪐. Zib loves planets too, so they talk about them for hours!"}
+      ],
+      "askYou": "What is YOUR special interest? Who do you like to tell about it?"
+    },
+    {
+      "id": 11,
+      "photos": ["body-1", "body-2", "body-3", "body-4"],
+      "explanation": [
+        "Body language means talking without words.",
+        "Our face, hands and body can “say” things.",
+        "What do hands say?",
+        "👋 Waving = “Hello!” or “Bye!”",
+        "👍 Thumbs up = “Good!” or “OK!”",
+        "🤷 Shrugging your shoulders = “I don't know.”",
+        "👉 Pointing = “Look over there!”",
+        "Crossed arms and a frown = “I'm upset” or “No.”",
+        "How do we look confident (brave and sure)?",
+        "Stand tall, with your shoulders back.",
+        "Keep your head up.",
+        "Use a clear, calm voice."
+      ],
+      "howToHelpTitle": "Good to know 💡",
+      "howToHelp": [
+        "You don't have to look into people's eyes. Looking at their nose or forehead is OK too.",
+        "Not sure what someone's body means? It's OK to ask: “Are you OK?” or “Do you want to play?”",
+        "To feel confident: take a big breath, stand tall, and smile if you want to.",
+        "Everyone's body talks a bit differently. That's OK!"
+      ],
+      "examples": [
+        {"name": "Noa", "icon": "👧", "text": "Noa waved 👋 at her friend across the playground. Her friend waved back. That means: “Hi!”"},
+        {"name": "Ben", "icon": "👦", "text": "Ben's teacher gave him a thumbs up 👍 after his test. It meant: “Good job!”"},
+        {"name": "Luna the space cat", "icon": "🐱", "text": "Luna stands tall with her tail up 🐾 when she feels confident and happy."}
+      ],
+      "askYou": "How do YOU stand when you feel strong and brave?"
+    },
+    {
+      "id": 12,
+      "photos": ["sarcasm-1", "sarcasm-2", "sarcasm-3"],
+      "explanation": [
+        "Sarcasm is when someone says the OPPOSITE of what they mean, often as a joke.",
+        "Example: it is raining hard 🌧️. Dad says: “Oh great, what lovely weather!”",
+        "He does NOT mean the weather is lovely. He is joking!",
+        "How can you tell?",
+        "The words don't match what is happening.",
+        "The voice sounds a bit funny: slow, or extra happy.",
+        "The person may smile a little, roll their eyes, or wink 😉.",
+        "Sarcasm can be hard to spot. That's OK! Lots of people find it hard."
+      ],
+      "howToHelpTitle": "What can I do? 💡",
+      "howToHelp": [
+        "Check: do the words match what is happening?",
+        "Not sure? Ask: “Are you joking?” or “Do you mean that?”",
+        "You can say: “Sarcasm is hard for me. Please say it plainly.”",
+        "If sarcasm feels mean, you can say: “That hurt my feelings.”",
+        "Good friends will explain the joke."
+      ],
+      "examples": [
+        {"name": "Jim", "icon": "👦", "text": "Jim dropped his books 📚. His friend smiled and said: “Smooth move!” Jim asked: “Are you joking?” His friend said: “Yes! Let me help you.”"},
+        {"name": "Lily", "icon": "👧", "text": "It was very hot outside ☀️. Mom said: “Wow, it's SO cold today!” and winked. Lily laughed. Mom was joking!"},
+        {"name": "Zib the alien", "icon": "👽", "text": "Zib's spaceship was very messy 🚀. Robo said: “Wow, so tidy!” Zib knew it was sarcasm, because the ship was NOT tidy."}
+      ],
+      "askYou": "Has someone said something that did not match what was happening? What did you do?"
+    },
+    {
+      "id": 13,
+      "photos": ["bully-1", "bully-2", "bully-3", "bully-4"],
+      "explanation": [
+        "A bully is someone who is mean to another person again and again, on purpose.",
+        "Bullies may call names, laugh at someone, push, leave someone out, or say mean things online.",
+        "Ableism is when people are mean or unfair to someone because they are disabled or different. For example, because they are autistic.",
+        "Being autistic is NOT bad. Your brain works in its own way, and that's OK!",
+        "If someone is mean to you, it is NOT your fault.",
+        "How can you tell it is bullying?",
+        "It happens again and again.",
+        "It makes you feel scared, sad, or alone.",
+        "The other person keeps going when you say stop."
+      ],
+      "howToHelpTitle": "What to do 🛡️",
+      "howToHelp": [
+        "Say in a strong, calm voice: “Stop. I don't like that.”",
+        "Walk away to a safe place, near a grown-up.",
+        "Tell a grown-up you trust, like a parent or a teacher. Keep telling until someone helps.",
+        "Telling is NOT tattling. It keeps you safe.",
+        "Stay close to friends who are kind to you.",
+        "If you see someone being bullied: don't laugh along. Stand with them, and tell a grown-up.",
+        "You deserve to be treated with kindness. 💜"
+      ],
+      "examples": [
+        {"name": "Sam", "icon": "👦", "text": "Some kids laughed when Sam flapped his hands 🙌. Sam told his teacher. The teacher helped, and the kids stopped."},
+        {"name": "Mia", "icon": "👧", "text": "A girl kept calling Mia names. Mia said: “Stop. I don't like that.” Then she walked to her friends and told Mom after school."},
+        {"name": "Robo the robot", "icon": "🤖", "text": "Some robots said Robo was “weird” because he beeps differently. Zib stood next to him and said: “Robo is my friend. Stop!”"}
+      ],
+      "askYou": "Who is a grown-up YOU can tell if someone is mean to you?"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "_about": "Space candies, the Feelings Test and the weekly homework. Change the numbers here - no code needed. See CONTENT_GUIDE.md. Shop prices are in looks.json ('price').",
+  "candies": {
+    "rightAnswer": 1,
+    "finishLeaf": 5,
+    "finishTest": 3,
+    "perfectTest": 5,
+    "finishAdventure": 5,
+    "weeklyGoal": 10
+  },
+  "test": {
+    "questions": 10,
+    "leavesNeeded": 2,
+    "stars": [
+      {"percent": 90, "stars": 3},
+      {"percent": 70, "stars": 2},
+      {"percent": 40, "stars": 1}
+    ]
+  },
+  "weekly": {
+    "defaultGoal": 3,
+    "goalChoices": [1, 2, 3, 4, 5, 7],
+    "weekStartsOn": "monday"
+  }
+}

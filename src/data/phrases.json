@@ -1,0 +1,64 @@
+{
+  "_about": "Ready-made chat phrases (like Club Penguin's Safe Chat). Kids tap a phrase instead of typing, which helps children who find reading or typing hard. Phrases are always allowed. The server only sends the phrase id, so only these exact phrases can be sent. See CONTENT_GUIDE.md. Keep each id unique and never change an id that is already used (old messages point to it).",
+  "categories": [
+    {"id": "hello", "name": "Hello", "icon": "👋", "phrases": [
+      {"id": "hi", "text": "Hi! 👋"},
+      {"id": "hello-friend", "text": "Hello, friend!"},
+      {"id": "good-morning", "text": "Good morning! ☀️"},
+      {"id": "how-are-you", "text": "How are you?"},
+      {"id": "nice-to-see-you", "text": "Nice to see you!"}
+    ]},
+    {"id": "feelings", "name": "Feelings", "icon": "💜", "phrases": [
+      {"id": "i-am-good", "text": "I'm good! 😊"},
+      {"id": "not-so-good", "text": "I'm not so good today. 😕"},
+      {"id": "need-break", "text": "I need a break. 🙉"},
+      {"id": "feel-better-soon", "text": "I hope you feel better soon. 💜"},
+      {"id": "want-to-talk", "text": "Do you want to talk about it?"},
+      {"id": "here-for-you", "text": "I'm here for you."}
+    ]},
+    {"id": "play", "name": "Play", "icon": "🎮", "phrases": [
+      {"id": "want-to-play", "text": "Want to play?"},
+      {"id": "lets-play", "text": "Let's play a game!"},
+      {"id": "my-turn", "text": "My turn!"},
+      {"id": "your-turn", "text": "Your turn!"},
+      {"id": "that-was-fun", "text": "That was fun! 🎉"},
+      {"id": "one-more", "text": "One more time?"}
+    ]},
+    {"id": "questions", "name": "Questions", "icon": "❓", "phrases": [
+      {"id": "fav-animal", "text": "What is your favorite animal?"},
+      {"id": "what-you-like", "text": "What do you like to do?"},
+      {"id": "how-was-day", "text": "How was your day?"},
+      {"id": "fav-color", "text": "What is your favorite color?"},
+      {"id": "special-interest", "text": "What is your special interest?"},
+      {"id": "which-level", "text": "Which leaf are you on?"}
+    ]},
+    {"id": "answers", "name": "Answers", "icon": "🙋", "phrases": [
+      {"id": "yes", "text": "Yes! 👍"},
+      {"id": "no-thanks", "text": "No, thank you."},
+      {"id": "maybe", "text": "Maybe."},
+      {"id": "dont-know", "text": "I don't know. 🤷"},
+      {"id": "me-too", "text": "Me too!"},
+      {"id": "wait", "text": "Please wait a moment."}
+    ]},
+    {"id": "kind", "name": "Kind words", "icon": "🌟", "phrases": [
+      {"id": "awesome", "text": "You are awesome! 🌟"},
+      {"id": "well-done", "text": "Well done!"},
+      {"id": "thank-you", "text": "Thank you! 💜"},
+      {"id": "sorry", "text": "I'm sorry."},
+      {"id": "its-ok", "text": "It's OK."},
+      {"id": "good-friend", "text": "You are a good friend."}
+    ]},
+    {"id": "space", "name": "Space", "icon": "🚀", "phrases": [
+      {"id": "finished-leaf", "text": "I finished a leaf on my tree! 🍃"},
+      {"id": "rainbow-full", "text": "My rainbow tree is full! 🌈"},
+      {"id": "see-my-buddy", "text": "Look at my space buddy! 🐾"},
+      {"id": "blast-off", "text": "3, 2, 1... blast off! 🚀"}
+    ]},
+    {"id": "bye", "name": "Bye", "icon": "🌙", "phrases": [
+      {"id": "bye", "text": "Bye! 👋"},
+      {"id": "see-you", "text": "See you later!"},
+      {"id": "good-night", "text": "Good night! 🌙"},
+      {"id": "have-to-go", "text": "I have to go now."}
+    ]}
+  ]
+}

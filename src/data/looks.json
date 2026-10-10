@@ -1,0 +1,138 @@
+{
+  "_about": "Everything a child can choose for their avatar and their space buddy. Items with a 'price' are SHOP items: the child buys them with space candies (see rewards.json); items without a price are free. Each item is a 'Dec' (decoration): id, name, icon (shown on the picker button) and, for colours, the colour code. The drawings know the ids, so to add a NEW hair style or accessory a developer must also draw it; new COLOURS (hair, skin, outfit, buddy) work straight away - fun skin colours (green, blue...) are welcome: being creative is part of the fun. Buddy 'moods' are the buddy's face; 'mirror' copies the child's own feeling. See CONTENT_GUIDE.md.",
+  "human": {
+    "hair": [
+      {"id": "short", "name": "Short", "icon": "💇"},
+      {"id": "long", "name": "Long", "icon": "👩"},
+      {"id": "curly", "name": "Curly", "icon": "🌀"},
+      {"id": "ponytail", "name": "Ponytail", "icon": "🎀"},
+      {"id": "buns", "name": "Space buns", "icon": "🪐"},
+      {"id": "spiky", "name": "Spiky", "icon": "⚡"}
+    ],
+    "hairColor": [
+      {"id": "black", "name": "Black", "color": "#2B2433"},
+      {"id": "brown", "name": "Brown", "color": "#6B4423"},
+      {"id": "blonde", "name": "Blonde", "color": "#E3B54A"},
+      {"id": "red", "name": "Red", "color": "#C4502A"},
+      {"id": "purple", "name": "Purple", "color": "#9333EA"},
+      {"id": "blue", "name": "Blue", "color": "#2563EB"},
+      {"id": "pink", "name": "Pink", "color": "#EC4899"},
+      {"id": "green", "name": "Green", "color": "#22C55E"},
+      {"id": "white", "name": "Snow white", "color": "#F1F5F9"}
+    ],
+    "skin": [
+      {"id": "skin1", "name": "Skin 1", "color": "#FCE3CF"},
+      {"id": "skin2", "name": "Skin 2", "color": "#F6CCA8"},
+      {"id": "skin3", "name": "Skin 3", "color": "#E9B68B"},
+      {"id": "skin4", "name": "Skin 4", "color": "#D49C6C"},
+      {"id": "skin5", "name": "Skin 5", "color": "#AE7448"},
+      {"id": "skin6", "name": "Skin 6", "color": "#8A5532"},
+      {"id": "skin7", "name": "Skin 7", "color": "#653B22"},
+      {"id": "skin8", "name": "Skin 8", "color": "#4A2A18"},
+      {"id": "funGreen", "name": "Alien green", "color": "#6EE7A0"},
+      {"id": "funBlue", "name": "Sky blue", "color": "#7CC4FA"},
+      {"id": "funRed", "name": "Mars red", "color": "#F87171"},
+      {"id": "funPurple", "name": "Galaxy purple", "color": "#C4A5FA"},
+      {"id": "funPink", "name": "Bubblegum", "color": "#F9A8D4"},
+      {"id": "funOrange", "name": "Sunny orange", "color": "#FDBA74"},
+      {"id": "funYellow", "name": "Star yellow", "color": "#FDE68A"},
+      {"id": "funTeal", "name": "Ocean teal", "color": "#5EEAD4"}
+    ],
+    "outfit": [
+      {"id": "purple", "name": "Purple", "color": "#7C3AED"},
+      {"id": "blue", "name": "Blue", "color": "#2563EB"},
+      {"id": "green", "name": "Green", "color": "#16A34A"},
+      {"id": "red", "name": "Red", "color": "#DC2626"},
+      {"id": "yellow", "name": "Yellow", "color": "#EAB308"},
+      {"id": "pink", "name": "Pink", "color": "#DB2777"},
+      {"id": "spacesuit", "name": "Space suit", "color": "#E5E7EB"}
+    ],
+    "accessories": [
+      {"id": "catEars", "name": "Cat ears", "icon": "🐱"},
+      {"id": "glasses", "name": "Glasses", "icon": "👓"},
+      {"id": "headphones", "name": "Headphones", "icon": "🎧"},
+      {"id": "bow", "name": "Bow", "icon": "🎀"},
+      {"id": "starClip", "name": "Star clip", "icon": "⭐"},
+      {"id": "freckles", "name": "Freckles", "icon": "✨"},
+      {"id": "coolShades", "name": "Cool shades", "icon": "🕶️", "price": 15},
+      {"id": "witchHat", "name": "Witch hat", "icon": "🧙", "price": 20},
+      {"id": "guitar", "name": "Guitar", "icon": "🎸", "price": 30},
+      {"id": "superCape", "name": "Super cape", "icon": "🦸", "price": 30},
+      {"id": "pumpkinCostume", "name": "Pumpkin costume", "icon": "🎃", "price": 40},
+      {"id": "rainbowWings", "name": "Rainbow wings", "icon": "🌈", "price": 45},
+      {"id": "jetpack", "name": "Jetpack", "icon": "🚀", "price": 50},
+      {"id": "firePowers", "name": "Fire powers", "icon": "🔥", "price": 60}
+    ]
+  },
+  "pet": {
+    "kinds": [
+      {"id": "cat", "name": "Cat", "icon": "🐱"},
+      {"id": "dog", "name": "Dog", "icon": "🐶"},
+      {"id": "alien", "name": "Alien", "icon": "👽"}
+    ],
+    "styles": {
+      "cat": [
+        {"id": "plain", "name": "Plain", "icon": "🐈"},
+        {"id": "stripes", "name": "Stripes", "icon": "🦓"},
+        {"id": "patches", "name": "Patches", "icon": "🎨"}
+      ],
+      "dog": [
+        {"id": "floppy", "name": "Floppy ears", "icon": "🐶"},
+        {"id": "pointy", "name": "Pointy ears", "icon": "🐺"},
+        {"id": "spots", "name": "Spots", "icon": "🎨"}
+      ],
+      "alien": [
+        {"id": "oneAntenna", "name": "One antenna", "icon": "📡"},
+        {"id": "twoAntennae", "name": "Two antennae", "icon": "🛸"},
+        {"id": "threeEyes", "name": "Three eyes", "icon": "👀"}
+      ]
+    },
+    "colors": [
+      {"id": "green", "name": "Alien green", "color": "#4ADE80"},
+      {"id": "orange", "name": "Orange", "color": "#F59E0B"},
+      {"id": "golden", "name": "Golden", "color": "#E8C07A"},
+      {"id": "brown", "name": "Brown", "color": "#8B5A2B"},
+      {"id": "grey", "name": "Grey", "color": "#9CA3AF"},
+      {"id": "white", "name": "White", "color": "#F3F4F6"},
+      {"id": "black", "name": "Black", "color": "#374151"},
+      {"id": "purple", "name": "Purple", "color": "#A78BFA"},
+      {"id": "teal", "name": "Teal", "color": "#2DD4BF"},
+      {"id": "red", "name": "Red", "color": "#F87171"},
+      {"id": "blue", "name": "Blue", "color": "#60A5FA"},
+      {"id": "sky", "name": "Sky blue", "color": "#7DD3FC"},
+      {"id": "pink", "name": "Pink", "color": "#F9A8D4"},
+      {"id": "yellow", "name": "Sunny yellow", "color": "#FDE047"},
+      {"id": "lime", "name": "Lime", "color": "#A3E635"},
+      {"id": "magenta", "name": "Magenta", "color": "#E879F9"},
+      {"id": "indigo", "name": "Indigo", "color": "#6366F1"}
+    ],
+    "moods": [
+      {"id": "mirror", "name": "Same as me", "icon": "🪞"},
+      {"id": "happy", "name": "Smile", "icon": "😊"},
+      {"id": "grin", "name": "Big grin", "icon": "😄"},
+      {"id": "silly", "name": "Silly", "icon": "😜"},
+      {"id": "love", "name": "Love", "icon": "😍"},
+      {"id": "surprised", "name": "Wow!", "icon": "😮"},
+      {"id": "sleepy", "name": "Sleepy", "icon": "😴"},
+      {"id": "sad", "name": "Frown", "icon": "☹️"},
+      {"id": "grumpy", "name": "Grumpy", "icon": "😠"}
+    ],
+    "accessories": [
+      {"id": "spaceHelmet", "name": "Space helmet", "icon": "🔮"},
+      {"id": "scarf", "name": "Scarf", "icon": "🧣"},
+      {"id": "bowTie", "name": "Bow tie", "icon": "🎀"},
+      {"id": "crown", "name": "Crown", "icon": "👑"},
+      {"id": "petShades", "name": "Cool shades", "icon": "🕶️", "price": 15},
+      {"id": "pumpkinHat", "name": "Pumpkin hat", "icon": "🎃", "price": 20},
+      {"id": "petGuitar", "name": "Tiny guitar", "icon": "🎸", "price": 25},
+      {"id": "petCape", "name": "Super cape", "icon": "🦸", "price": 25},
+      {"id": "batWings", "name": "Bat wings", "icon": "🦇", "price": 35},
+      {"id": "petRainbowWings", "name": "Rainbow wings", "icon": "🌈", "price": 40},
+      {"id": "petFirePowers", "name": "Fire powers", "icon": "🔥", "price": 50}
+    ]
+  },
+  "defaults": {
+    "human": {"hair": "short", "hairColor": "brown", "skin": "skin3", "outfit": "purple", "accessories": []},
+    "pet": {"kind": "alien", "name": "Zib Jr.", "style": "twoAntennae", "color": "green", "mood": "happy", "accessories": []}
+  }
+}
